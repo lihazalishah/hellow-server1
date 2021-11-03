@@ -16,7 +16,7 @@ app.get("/",(req,res ) => {
     res.send("i am using hellow ward server");
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log(`server running at http://localhost:${port}`)
 
 })
