@@ -2,7 +2,7 @@
 //console.log("server start")
 import express from "express";
 
-const port=process.env.port || 3000;
+const port = process.env.PORT || 3000;
 const app=express();
 app.get("/profile",(req,res ) => {
     res.send("here is profile");
@@ -17,7 +17,7 @@ app.get("/",(req,res ) => {
 })
 
 app.listen(3000,()=>{
-    console.log(`Example app listening at http://localhost:${port}`)
+    console.log(`server running at http://localhost:${port}`)
 
 })
 // deploy this server to heroku cloud
